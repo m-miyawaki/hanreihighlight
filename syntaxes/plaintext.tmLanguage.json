@@ -1,0 +1,69 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Plain Text",
+	"patterns": [
+		{
+			"include": "#shou"
+		},
+		
+		{
+			"include": "#kakko"
+		},
+		{
+			"include": "#hanreipart"
+		},
+		{
+			"include": "#secnum"
+		},
+		{
+			"include": "#sectitle"
+		},
+		{
+			"include": "#besshi"
+		}
+	],
+	"repository": {
+		"shou": {
+			"patterns": [{
+				"name": "variable.other.object.property.ts.hanrei",
+				"match": "^[ 　]*(第[一二三四五六七八九十百〇]+[編章節款][ 　]+[^。 　]+)$"
+			}]
+		},
+			"hanreipart": {
+			"patterns": [{
+				"name": "entity.name.function.ts.hanrei",
+				"match": "^[ 　\\t]*[^ 　]{0,10}(判[ 　]*決|主[ 　]*文|理[ 　]*由|事[ 　]*実|当裁判所の判断|争点に対する判断|上告.+の上告理由|記)[ 　]*$"
+			}]
+			
+		},
+		"besshi": {
+			"patterns": [{
+				"name": "entity.name.function.ts.hanrei",
+				"match": "^[ 　\\t]*(?:（?別[ 　]*[紙表]）?[ 　]*[^。 　]+|[^。]{0,10}目[ 　]*録[ 　]*(?:[一二三四五六七八九十百〇0-9０-９（）]+)?)$"
+			}]
+			
+		},
+		"secnum": {
+			"patterns": [{
+				"name": "keyword.control.ts.hanrei",
+				"match": "^[ 　]{0,10}第?[一二三四五六七八九十百〇0-9０-９アイウエオカキクケコ\\(\\)（）]+[\\-－0-9０-９]*[ 　\\)）、．\\.]+([^。 　]+[^。、]$)?"
+			}]
+			
+		},
+		"sectitle": {
+			"patterns": [{
+				"name": "string.quoted.single.ts.hanrei",
+				"match": "^[ 　]*[<＜【〔［《][^<＜【〔［《]+[>＞】〕］》]"
+			}]
+			
+		},
+		"kakko": {
+			"patterns": [{
+				"name": "comment.line.double-slash.ts.hanrei",
+				"match": "(?<=[^ 　]+)(?:（(?:[^（）]{3,}|(?:[^（）]*（[^（）]{0,2}）[^（）]*)+)）)"
+			}]
+		}
+		
+	},
+	"scopeName": "source.ts.hanrei"
+}

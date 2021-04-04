@@ -1,0 +1,28 @@
+{
+    "name": "hanreihighlight",
+    "displayName": "hanreiHighlight",
+    "description": "判例その他テキストデータのハイライト",
+    "version": "0.0.2",
+    "publisher": "miyawaki",
+    "repository": {"url": "https://github.com/m-miyawaki/hanreihighlight"},
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "plaintext",
+            "aliases": ["Plain Text", "plaintext"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "plaintext",
+            "scopeName": "source.ts.hanrei",
+            "path": "./syntaxes/plaintext.tmLanguage.json"
+        }]
+    }
+}
