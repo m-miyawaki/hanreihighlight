@@ -1,11 +1,14 @@
 {
     "name": "hanreihighlight",
-    "displayName": "hanreiHighlight",
+    "displayName": "HanreiHighlight",
     "description": "判例その他テキストデータのハイライト",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "publisher": "miyawaki",
-    "repository": {"url": "https://github.com/m-miyawaki/hanreihighlight"},
-    "license": "MIT",
+    "repository": {
+		"type": "git",
+        "url": "https://github.com/m-miyawaki/hanreihighlight"
+    },
+    "license": "MIT-0",
     "engines": {
         "vscode": "^1.46.0"
     },

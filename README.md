@@ -1,4 +1,4 @@
-# hanreiHighlight
+# HanreiHighlight README
 
 判例その他のテキストのハイライト表示
 
