@@ -9,6 +9,10 @@
 		{
 			"include": "#kakko"
 		},
+		
+		{
+			"include": "#kakko2"
+		},
 		{
 			"include": "#hanreipart"
 		},
@@ -60,8 +64,24 @@
 		"kakko": {
 			"patterns": [{
 				"name": "comment.line.double-slash.ts.hanrei",
-				"match": "(?<=[^ 　]+)(?:（(?:[^（）]{3,}|(?:[^（）]*（[^（）]{0,2}）[^（）]*)+)）)"
+				"match": "(?<=[^ 　]+)(?:（(?:[^（）]{2,}|(?:[^（）]*（[^（）]{0,2}）[^（）]*)+)）)"
 			}]
+		},
+		"kakko2": {
+				"name": "comment.line.double-slash.ts.hourei",
+				"begin": "（[^（）]*(?:(（[^（）]{2,}）)|(（[^（）]*（[^（）]{2,}）[^（）]*）))",
+				"beginCaptures" :{
+					"1" :{"name": "constant.numeric.decimal.ts.hourei"}
+				},
+				"end":	"(?:(（[^（）]{2,}）)|(（[^（）]*（[^（）]{2,}）[^（）]*）))?[^（）\\s]*）",
+				"endCaptures": {
+					"1" :{"name": "constant.numeric.decimal.ts.hourei"}
+				},
+				"patterns": [{	
+					"name": "constant.numeric.decimal.ts.hourei",
+					"match": "(?:（(?:[^（）]{2,}|(?:[^（）]*（[^（）]{0,2}）[^（）]*)+)）)"
+					}]
+				
 		}
 		
 	},

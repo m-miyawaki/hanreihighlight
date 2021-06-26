@@ -11,13 +11,13 @@
 - 留意点
 	- 上のスクリーンショット画像は[Darcula Theme
 ](https://marketplace.visualstudio.com/items?itemName=rokoroku.vscode-theme-darcula)というテーマを適用した場合のものです。テーマが変わると、ハイライト表示の配色も変わります。
-	- 括弧書きも一応ハイライト表示しますが、カッコが二重以上になっているとハイライトできなくなります。
+	- 括弧書きも一応ハイライト表示しますが、完璧ではありません。
 
 ## 使い方
 判決のテキストデータをVSCodeにコピー＆ペーストして、テキストファイル（.txt）として保存すると、ハイライト表示されるようになります。
 
 ## アウトライン表示（CodeMapを使う）
-この拡張を入れただけでは、サイドパネルにアウトラインを表示することはできません。アウトライン表示については、CodeMapという[拡張機能](https://marketplace.visualstudio.com/items?itemName=oleg-shilo.codemap)をインストールすることで可能になります。私はこの拡張機能をインストールして、settings.jsonに下記のように記述しています：
+この拡張を入れただけでは、サイドパネルにアウトラインを表示することはできません。アウトライン表示については、CodeMapという[拡張機能](https://marketplace.visualstudio.com/items?itemName=oleg-shilo.codemap)をインストールすることで可能になります。私はこの拡張機能をインストールして、`settings.json`に下記のように記述しています：
 
 ```
  {
@@ -44,9 +44,8 @@
 
 ![](./imgs/img2.png)
 
-詳細については[ここ](https://github.com/oleg-shilo/codemap.vscode/wiki/Adding-custom-mappers)を参照してください。
-## その他
-不具合等については、私の[Twitterアカウント(ID: m_miyawaki)](https://twitter.com/m_miyawaki)に連絡してください。
+詳細についてはCodeMapの[wiki](https://github.com/oleg-shilo/codemap.vscode/wiki/Adding-custom-mappers)を参照してください。
+
 
 ## Release Notes
 
