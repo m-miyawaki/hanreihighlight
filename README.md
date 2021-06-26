@@ -6,7 +6,7 @@
 
 判決の構成パートの開始を現す文字列（「主文」「当裁判所の判断」など）や、章・節の開始番号やタイトルなどをハイライト表示します。
 
-![](./imgs/img1.png)
+![スクリーンショット1](./imgs/img1.png)
 
 - 留意点
 	- 上のスクリーンショット画像は[Darcula Theme
@@ -42,7 +42,7 @@
 ```
 すると、下の画像のようになります。
 
-![](./imgs/img2.png)
+![スクリーンショット2](./imgs/img2.png)
 
 詳細についてはCodeMapの[wiki](https://github.com/oleg-shilo/codemap.vscode/wiki/Adding-custom-mappers)を参照してください。
 
