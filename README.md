@@ -46,8 +46,3 @@
 
 詳細についてはCodeMapの[wiki](https://github.com/oleg-shilo/codemap.vscode/wiki/Adding-custom-mappers)を参照してください。
 
-
-## Release Notes
-
-### 1.0.0
-公開
